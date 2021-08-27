@@ -31,22 +31,7 @@
 <link rel="stylesheet" type="text/css" href="css/util.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 
-<script>
 
-$('body > form > div > div > div.col-sm-10.col-lg-7.col-xl-5.m-lr-auto.m-b-50 > div > button').on('click',function(){
-  
-  adobe.target.trackEvent({
-	mbox: 'orderConfirmation',
-	params: {
-		"orderId":"3-order",
-		"orderTotal":256.36,
-		"productPurchasedId":"5005,5006,5008"
-		}
-	});
-  
-  });
-  
-</script>
 
 <script src="https://assets.adobedtm.com/6268dc4b6b26/7f474f096269/launch-36dd836db253-development.min.js" async></script>
 
@@ -613,13 +598,21 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 <script src="js/main.js"></script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-23581568-13');
+$('body > form > div > div > div.col-sm-10.col-lg-7.col-xl-5.m-lr-auto.m-b-50 > div > button').on('click',function(){
+  
+  adobe.target.trackEvent({
+	mbox: 'orderConfirmation',
+	params: {
+		"orderId":"3-order",
+		"orderTotal":256.36,
+		"productPurchasedId":"5005,5006,5008"
+		}
+	});
+  
+  });
+  
 </script>
 </body>
 
