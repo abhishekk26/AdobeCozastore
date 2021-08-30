@@ -606,7 +606,7 @@ $('body > form > div > div > div.col-sm-10.col-lg-7.col-xl-5.m-lr-auto.m-b-50 > 
 	mbox: 'orderConfirmation',
 	params: {
 		"orderId":"3-order",
-		"orderTotal":256.36,
+		"orderTotal":(Date.now().toString(36) + Math.random().toString(36).substr(2, 5)).toUpperCase(),
 		"productPurchasedId":"5005,5006,5008"
 		}
 	});
